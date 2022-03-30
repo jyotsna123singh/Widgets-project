@@ -5,6 +5,7 @@ import Dropdown from "./components/Dropdown";
 import Translate from "./components/Translate";
 import Route from "./components/Route";
 import Header from "./components/Header";
+import '../src/colors.css';
 
 const items = [
   {
@@ -23,15 +24,15 @@ const items = [
 
 const options = [
   {
-    label: "The Color Red",
+    label: "Frontend",
     value: "red",
   },
   {
-    label: "The Color Green",
+    label: "Backend",
     value: "green",
   },
   {
-    label: "A Shade of Blue",
+    label: "Full Stack",
     value: "blue",
   },
 ];
@@ -50,7 +51,7 @@ const App = () => {
       </Route>
       <Route path="/dropdown">
         <Dropdown
-          label="Select a color"
+          label="Select a stack"
           options={options}
           selected={selected}
           onSelectedChange={setSelected}
